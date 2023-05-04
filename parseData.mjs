@@ -1,6 +1,6 @@
 // Parses the competition folder structure into a json file
 // Run with Node.js
-// TODO: complete parseIO
+// TODO: parse "custom" and "custom interactive"
 import fs from "node:fs/promises";
 import path from "node:path";
 
@@ -23,14 +23,67 @@ async function customYamlParser(filePath) {
 }
 
 /**
+ * Parses the data folder
+ *
+ * @param {string} dataFolder
+ */
+async function parseDataFolder(dataFolder) {
+    const dataObj = {
+        points: -1,
+        sample: [],
+        secret: [],
+    };
+    const files = await fs.readdir(dataFolder);
+    console.assert(files.filter((x) => x !== "sample" && x !== "secret" && x !== "testdata.yaml").length === 0);
+    console.assert(files.includes("secret"));
+    if (files.includes("sample")) {
+        dataObj.sample.push({
+            name: "sample1",
+            points: 0,
+            input: path.join(dataFolder, "sample", "1.in"),
+            output: path.join(dataFolder, "sample", "1.ans"),
+        });
+        const testData = await customYamlParser(path.join(dataFolder, "sample", "testdata.yaml"));
+        console.assert(testData.accept_score === "0");
+        console.assert(testData.range === "0 0");
+    }
+    const testData2 = await customYamlParser(path.join(dataFolder, "secret", "testdata.yaml"));
+    dataObj.points = Number(testData2.range.split(" ").at(-1));
+    const secretPath = path.join(dataFolder, "secret");
+    const subtasks = (await fs.readdir(secretPath)).filter((x) => x.startsWith("subtask"));
+    const subtaskLength = 7;
+    for (const subtask of subtasks) {
+        const subTaskPath = path.join(secretPath, subtask);
+        const number = Number(subtask.slice(subtaskLength));
+        const subtaskData = await customYamlParser(path.join(subTaskPath, "testdata.yaml"));
+        const subtaskPoints = Number(subtaskData.range.split(" ").at(-1));
+        dataObj.secret.push({
+            name: `secret${number}`,
+            points: subtaskPoints,
+            input: path.join(subTaskPath, "1.in"),
+            output: path.join(subTaskPath, "1.ans"),
+        });
+    }
+    return dataObj;
+}
+
+/**
  * Parses how the code is scored/validated
  *
  * @param {string} problemFolder
+ * @param {string} validationType
  * @returns
  */
-async function parseIO(problemFolder) {
-    // TODO: complete
-    return problemFolder;
+async function parseIO(problemFolder, validationType) {
+    console.assert(validationType === "default" || validationType === "custom" || validationType === "custom interactive");
+    if (validationType === "custom interactive") {
+        return problemFolder;
+    }
+    if (validationType === "custom") {
+        return problemFolder;
+    }
+    const dataObj = await parseDataFolder(path.join(problemFolder, "data"));
+    return dataObj;
 }
 
 /**
@@ -66,9 +119,9 @@ async function parseFiles(problemFiles) {
 
         const problemObj = await customYamlParser(problemYaml);
 
-        const isCustom = Boolean(problemObj.validation);
+        const validationType = problemObj.validation ?? "default";
 
-        const info = await parseIO(problemFolder);
+        const info = await parseIO(problemFolder, validationType);
 
         if (roundObj.name.length === 0) {
             roundObj.name = problemObj.source;
@@ -77,7 +130,8 @@ async function parseFiles(problemFiles) {
 
         roundObj.problems.push({
             name: problemObj.name,
-            isCustom,
+            validationType,
+            folder: problemFolder,
             statementPDF,
             analysisPDF,
             statementHTML,
