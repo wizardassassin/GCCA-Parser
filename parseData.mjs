@@ -1,7 +1,6 @@
 // Parses the competition folder structure into a json file
 // Run with Node.js
 // TODO: complete parseIO
-// TODO: parse hashcode
 import fs from "node:fs/promises";
 import path from "node:path";
 
@@ -150,6 +149,48 @@ async function parseDirectory(dir) {
     return roundObjects2;
 }
 
+/**
+ * Special function to parse Google Hash Code
+ *
+ * @param {string} dir
+ */
+async function parseHashCode(dir) {
+    const hashObj = {};
+    const folders = (await fs.readdir(dir)).filter((x) => !x.endsWith(".pdf")).map((x) => path.join(dir, x));
+    for (const folder of folders) {
+        const baseFolderName = path.basename(folder);
+        const splitFolderName = baseFolderName.split("_");
+        const year = Number(splitFolderName[1]);
+        const type = splitFolderName[2];
+        console.assert(splitFolderName[0] === "hashcode");
+        console.assert(Number.isFinite(year));
+        console.assert(type === "qualification" || type === "final");
+
+        if (!hashObj[year]) {
+            hashObj[year] = {
+                name: `Hash Code ${year}`,
+                year: year,
+                qualification: {
+                    name: `Hash Code ${year} - Qualification Round`,
+                    problemPDF: "",
+                    files: [],
+                },
+                final: {
+                    name: `Hash Code ${year} - Final Round`,
+                    problemPDF: "",
+                    files: [],
+                },
+            };
+        }
+
+        const files = (await fs.readdir(folder)).map((x) => path.join(folder, x));
+
+        hashObj[year][type].problemPDF = path.join(path.dirname(folder), baseFolderName + ".pdf");
+        hashObj[year][type].files.push(...files);
+    }
+    return hashObj;
+}
+
 const archive = "./coding-competitions-archive";
 
 // Parses the directories
@@ -160,12 +201,14 @@ const [codejam, codejam_to_io, farewell, kickstart] = await Promise.all([
     parseDirectory(`${archive}/kickstart`),
 ]);
 
+const hashcode = await parseHashCode(`${archive}/hashcode`);
+
 // Data object
 const dataObj = {
     codejam,
     codejam_to_io,
     farewell,
-    hashcode: {},
+    hashcode,
     kickstart,
 };
 

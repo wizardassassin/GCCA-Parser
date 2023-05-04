@@ -5243,7 +5243,227 @@
             }
         ]
     },
-    "hashcode": {},
+    "hashcode": {
+        "2014": {
+            "name": "Hash Code 2014",
+            "year": 2014,
+            "qualification": {
+                "name": "Hash Code 2014 - Qualification Round",
+                "problemPDF": "",
+                "files": []
+            },
+            "final": {
+                "name": "Hash Code 2014 - Final Round",
+                "problemPDF": "coding-competitions-archive\\hashcode\\hashcode_2014_final_round.pdf",
+                "files": [
+                    "coding-competitions-archive\\hashcode\\hashcode_2014_final_round\\paris_54000.txt"
+                ]
+            }
+        },
+        "2015": {
+            "name": "Hash Code 2015",
+            "year": 2015,
+            "qualification": {
+                "name": "Hash Code 2015 - Qualification Round",
+                "problemPDF": "coding-competitions-archive\\hashcode\\hashcode_2015_qualification_round.pdf",
+                "files": [
+                    "coding-competitions-archive\\hashcode\\hashcode_2015_qualification_round\\hashcode_2015_qualification_round.txt"
+                ]
+            },
+            "final": {
+                "name": "Hash Code 2015 - Final Round",
+                "problemPDF": "coding-competitions-archive\\hashcode\\hashcode_2015_final_round.pdf",
+                "files": [
+                    "coding-competitions-archive\\hashcode\\hashcode_2015_final_round\\hashcode_2015_final_round.txt"
+                ]
+            }
+        },
+        "2016": {
+            "name": "Hash Code 2016",
+            "year": 2016,
+            "qualification": {
+                "name": "Hash Code 2016 - Qualification Round",
+                "problemPDF": "coding-competitions-archive\\hashcode\\hashcode_2016_qualification_round.pdf",
+                "files": [
+                    "coding-competitions-archive\\hashcode\\hashcode_2016_qualification_round\\busy_day.in",
+                    "coding-competitions-archive\\hashcode\\hashcode_2016_qualification_round\\mother_of_all_warehouses.in",
+                    "coding-competitions-archive\\hashcode\\hashcode_2016_qualification_round\\redundancy.in"
+                ]
+            },
+            "final": {
+                "name": "Hash Code 2016 - Final Round",
+                "problemPDF": "coding-competitions-archive\\hashcode\\hashcode_2016_final_round.pdf",
+                "files": [
+                    "coding-competitions-archive\\hashcode\\hashcode_2016_final_round\\constellation.in",
+                    "coding-competitions-archive\\hashcode\\hashcode_2016_final_round\\forever_alone.in",
+                    "coding-competitions-archive\\hashcode\\hashcode_2016_final_round\\overlap.in",
+                    "coding-competitions-archive\\hashcode\\hashcode_2016_final_round\\weekend.in"
+                ]
+            }
+        },
+        "2017": {
+            "name": "Hash Code 2017",
+            "year": 2017,
+            "qualification": {
+                "name": "Hash Code 2017 - Qualification Round",
+                "problemPDF": "coding-competitions-archive\\hashcode\\hashcode_2017_qualification_round.pdf",
+                "files": [
+                    "coding-competitions-archive\\hashcode\\hashcode_2017_qualification_round\\kittens.in.txt",
+                    "coding-competitions-archive\\hashcode\\hashcode_2017_qualification_round\\me_at_the_zoo.in",
+                    "coding-competitions-archive\\hashcode\\hashcode_2017_qualification_round\\trending_today.in",
+                    "coding-competitions-archive\\hashcode\\hashcode_2017_qualification_round\\videos_worth_spreading.in"
+                ]
+            },
+            "final": {
+                "name": "Hash Code 2017 - Final Round",
+                "problemPDF": "coding-competitions-archive\\hashcode\\hashcode_2017_final_round.pdf",
+                "files": [
+                    "coding-competitions-archive\\hashcode\\hashcode_2017_final_round\\charleston_road.in",
+                    "coding-competitions-archive\\hashcode\\hashcode_2017_final_round\\lets_go_higher.in",
+                    "coding-competitions-archive\\hashcode\\hashcode_2017_final_round\\opera.in",
+                    "coding-competitions-archive\\hashcode\\hashcode_2017_final_round\\rue_de_londres.in"
+                ]
+            }
+        },
+        "2018": {
+            "name": "Hash Code 2018",
+            "year": 2018,
+            "qualification": {
+                "name": "Hash Code 2018 - Qualification Round",
+                "problemPDF": "coding-competitions-archive\\hashcode\\hashcode_2018_qualification_round.pdf",
+                "files": [
+                    "coding-competitions-archive\\hashcode\\hashcode_2018_qualification_round\\a_example.in",
+                    "coding-competitions-archive\\hashcode\\hashcode_2018_qualification_round\\b_should_be_easy.in",
+                    "coding-competitions-archive\\hashcode\\hashcode_2018_qualification_round\\c_no_hurry.in",
+                    "coding-competitions-archive\\hashcode\\hashcode_2018_qualification_round\\d_metropolis.in",
+                    "coding-competitions-archive\\hashcode\\hashcode_2018_qualification_round\\e_high_bonus.in"
+                ]
+            },
+            "final": {
+                "name": "Hash Code 2018 - Final Round",
+                "problemPDF": "coding-competitions-archive\\hashcode\\hashcode_2018_final_round.pdf",
+                "files": [
+                    "coding-competitions-archive\\hashcode\\hashcode_2018_final_round\\a_example.in",
+                    "coding-competitions-archive\\hashcode\\hashcode_2018_final_round\\b_short_walk.in",
+                    "coding-competitions-archive\\hashcode\\hashcode_2018_final_round\\c_going_green.in",
+                    "coding-competitions-archive\\hashcode\\hashcode_2018_final_round\\d_wide_selection.in",
+                    "coding-competitions-archive\\hashcode\\hashcode_2018_final_round\\e_precise_fit.in",
+                    "coding-competitions-archive\\hashcode\\hashcode_2018_final_round\\f_different_footprints.in"
+                ]
+            }
+        },
+        "2019": {
+            "name": "Hash Code 2019",
+            "year": 2019,
+            "qualification": {
+                "name": "Hash Code 2019 - Qualification Round",
+                "problemPDF": "coding-competitions-archive\\hashcode\\hashcode_2019_qualification_round.pdf",
+                "files": [
+                    "coding-competitions-archive\\hashcode\\hashcode_2019_qualification_round\\a_example.txt",
+                    "coding-competitions-archive\\hashcode\\hashcode_2019_qualification_round\\b_lovely_landscapes.txt",
+                    "coding-competitions-archive\\hashcode\\hashcode_2019_qualification_round\\c_memorable_moments.txt",
+                    "coding-competitions-archive\\hashcode\\hashcode_2019_qualification_round\\d_pet_pictures.txt",
+                    "coding-competitions-archive\\hashcode\\hashcode_2019_qualification_round\\e_shiny_selfies.txt"
+                ]
+            },
+            "final": {
+                "name": "Hash Code 2019 - Final Round",
+                "problemPDF": "coding-competitions-archive\\hashcode\\hashcode_2019_final_round.pdf",
+                "files": [
+                    "coding-competitions-archive\\hashcode\\hashcode_2019_final_round\\a_example.in",
+                    "coding-competitions-archive\\hashcode\\hashcode_2019_final_round\\b_narrow.in",
+                    "coding-competitions-archive\\hashcode\\hashcode_2019_final_round\\c_urgent.in",
+                    "coding-competitions-archive\\hashcode\\hashcode_2019_final_round\\d_typical.in",
+                    "coding-competitions-archive\\hashcode\\hashcode_2019_final_round\\e_intriguing.in",
+                    "coding-competitions-archive\\hashcode\\hashcode_2019_final_round\\f_big.in"
+                ]
+            }
+        },
+        "2020": {
+            "name": "Hash Code 2020",
+            "year": 2020,
+            "qualification": {
+                "name": "Hash Code 2020 - Qualification Round",
+                "problemPDF": "coding-competitions-archive\\hashcode\\hashcode_2020_qualification_round.pdf",
+                "files": [
+                    "coding-competitions-archive\\hashcode\\hashcode_2020_qualification_round\\a_example.txt",
+                    "coding-competitions-archive\\hashcode\\hashcode_2020_qualification_round\\b_read_on.txt",
+                    "coding-competitions-archive\\hashcode\\hashcode_2020_qualification_round\\c_incunabula.txt",
+                    "coding-competitions-archive\\hashcode\\hashcode_2020_qualification_round\\d_tough_choices.txt",
+                    "coding-competitions-archive\\hashcode\\hashcode_2020_qualification_round\\e_so_many_books.txt",
+                    "coding-competitions-archive\\hashcode\\hashcode_2020_qualification_round\\f_libraries_of_the_world.txt"
+                ]
+            },
+            "final": {
+                "name": "Hash Code 2020 - Final Round",
+                "problemPDF": "coding-competitions-archive\\hashcode\\hashcode_2020_final_round.pdf",
+                "files": [
+                    "coding-competitions-archive\\hashcode\\hashcode_2020_final_round\\a_example.txt",
+                    "coding-competitions-archive\\hashcode\\hashcode_2020_final_round\\b_single_arm.txt",
+                    "coding-competitions-archive\\hashcode\\hashcode_2020_final_round\\c_few_arms.txt",
+                    "coding-competitions-archive\\hashcode\\hashcode_2020_final_round\\d_tight_schedule.txt",
+                    "coding-competitions-archive\\hashcode\\hashcode_2020_final_round\\e_dense_workspace.txt",
+                    "coding-competitions-archive\\hashcode\\hashcode_2020_final_round\\f_decentralized.txt"
+                ]
+            }
+        },
+        "2021": {
+            "name": "Hash Code 2021",
+            "year": 2021,
+            "qualification": {
+                "name": "Hash Code 2021 - Qualification Round",
+                "problemPDF": "coding-competitions-archive\\hashcode\\hashcode_2021_qualification_round.pdf",
+                "files": [
+                    "coding-competitions-archive\\hashcode\\hashcode_2021_qualification_round\\a_an_example.in.txt",
+                    "coding-competitions-archive\\hashcode\\hashcode_2021_qualification_round\\b_by_the_ocean.in.txt",
+                    "coding-competitions-archive\\hashcode\\hashcode_2021_qualification_round\\c_checkmate.in.txt",
+                    "coding-competitions-archive\\hashcode\\hashcode_2021_qualification_round\\d_daily_commute.in.txt",
+                    "coding-competitions-archive\\hashcode\\hashcode_2021_qualification_round\\e_etoile.in.txt",
+                    "coding-competitions-archive\\hashcode\\hashcode_2021_qualification_round\\f_forever_jammed.in.txt"
+                ]
+            },
+            "final": {
+                "name": "Hash Code 2021 - Final Round",
+                "problemPDF": "coding-competitions-archive\\hashcode\\hashcode_2021_final_round.pdf",
+                "files": [
+                    "coding-competitions-archive\\hashcode\\hashcode_2021_final_round\\a_example.in.txt",
+                    "coding-competitions-archive\\hashcode\\hashcode_2021_final_round\\b_breadth_of_choice.in.txt",
+                    "coding-competitions-archive\\hashcode\\hashcode_2021_final_round\\c_constrained_optimisation.in.txt",
+                    "coding-competitions-archive\\hashcode\\hashcode_2021_final_round\\d_distinction.in.txt",
+                    "coding-competitions-archive\\hashcode\\hashcode_2021_final_round\\e_expectation_maximisation.in.txt",
+                    "coding-competitions-archive\\hashcode\\hashcode_2021_final_round\\f_five_thousand.in.txt"
+                ]
+            }
+        },
+        "2022": {
+            "name": "Hash Code 2022",
+            "year": 2022,
+            "qualification": {
+                "name": "Hash Code 2022 - Qualification Round",
+                "problemPDF": "coding-competitions-archive\\hashcode\\hashcode_2022_qualification_round.pdf",
+                "files": [
+                    "coding-competitions-archive\\hashcode\\hashcode_2022_qualification_round\\a_an_example.in.txt",
+                    "coding-competitions-archive\\hashcode\\hashcode_2022_qualification_round\\b_better_start_small.in.txt",
+                    "coding-competitions-archive\\hashcode\\hashcode_2022_qualification_round\\c_collaboration.in.txt",
+                    "coding-competitions-archive\\hashcode\\hashcode_2022_qualification_round\\d_dense_schedule.in.txt",
+                    "coding-competitions-archive\\hashcode\\hashcode_2022_qualification_round\\e_exceptional_skills.in.txt",
+                    "coding-competitions-archive\\hashcode\\hashcode_2022_qualification_round\\f_find_great_mentors.in.txt"
+                ]
+            },
+            "final": {
+                "name": "Hash Code 2022 - Final Round",
+                "problemPDF": "coding-competitions-archive\\hashcode\\hashcode_2022_final_round.pdf",
+                "files": [
+                    "coding-competitions-archive\\hashcode\\hashcode_2022_final_round\\a_an_example.in.txt",
+                    "coding-competitions-archive\\hashcode\\hashcode_2022_final_round\\b_better_hurry.in.txt",
+                    "coding-competitions-archive\\hashcode\\hashcode_2022_final_round\\c_carousel.in.txt",
+                    "coding-competitions-archive\\hashcode\\hashcode_2022_final_round\\d_decorated_houses.in.txt",
+                    "coding-competitions-archive\\hashcode\\hashcode_2022_final_round\\e_excellent_weather.in.txt",
+                    "coding-competitions-archive\\hashcode\\hashcode_2022_final_round\\f_festive_flyover.in.txt"
+                ]
+            }
+        }
+    },
     "kickstart": {
         "2013": [
             {
